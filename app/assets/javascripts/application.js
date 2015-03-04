@@ -15,12 +15,25 @@
 //= require turbolinks
 //= require_tree .
 
-function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+$(document).on("page:change", function(){
+
+	$('#box1').hover(function() {
+	   $("#first-circle").hide(500);
+	 }, function() {
+	   $("#first-circle").show(500);
+	 });
+
+	$('#box2').hover(function() {
+	   $("#second-circle").hide(500);
+	 }, function() {
+	   $("#second-circle").show(500);
+	 });
+
+	$('#box3').hover(function() {
+	   $("#third-circle").hide(500);
+	 }, function() {
+	   $("#third-circle").show(500);
+	 });
+
+ 
+});
