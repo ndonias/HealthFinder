@@ -3,10 +3,8 @@ class UsersController < ApplicationController
 
 
   def index
-    def index
-      @Users = Users.all
+      @users = User.all
     end
-  end
 
   def new
     @user = User.new

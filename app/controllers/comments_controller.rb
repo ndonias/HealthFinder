@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
   def new
     if current_user
      @comment = Comment.new
-     @post = Post.find(params[:post_id])
+     @article = Post.find(params[:article_id])
     else
       flash[:notice] = "Please sign in first."
       redirect_to signin_path
@@ -24,7 +24,7 @@ class CommentsController < ApplicationController
   
   def edit
     if current_user == @comment.user
-      set_post
+      set_comment
     else
       redirect_to @comment.post
     end
@@ -44,34 +44,29 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    if current_user == @comment.user
-    set_post
+    if current_user == @current.user
+    set_comment
     @comment.destroy
     if @comment.destroy
       flash[:notice] = "Comment deleted successfully."
     else
       flash[:alert] = "There was a problem deleting your comment."
     end
-    redirect_to post_path(@post)
+    redirect_to article_path(@article)
   end
   
-  def current_user
-    session[:user_id] ? User.find(session[:user_id]) : nil
-  end
-
-
   private
 
-    def set_post
-      @post = Post.find(params[:post_id])
+    def set_comments
+      @comment = Comment.find(params[:comment_id])
     end
 
   def set_comment
-    @comment = Comment.find(params[:id])
+    @comment = Comment.find(params[:comment_id])
   end
 
   def comment_params
-    params.require(:comment).permit(:body).merge(user_id: current_user.id, post_id: params[:post_id])
+    params.require(:comment).permit(:title, :body)
   end
 
 

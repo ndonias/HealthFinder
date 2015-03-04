@@ -1,2 +1,15 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<h1>Listing all users</h1>
+
+
+
+<ul>
+	<% @users.each do |user| %>
+		<li>
+			<%= link_to user.username, user_path(user) %> | 
+			<%= link_to 'delete', user_path(user), method: :delete, data: {confirm: "Are you sure?"} %>|
+			<%= link_to 'new user', new_user_path %>
+
+		</li>
+		<br>
+	<% end %>
+</ul>
