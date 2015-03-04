@@ -7,3 +7,31 @@ html, body, #map-canvas {
 	margin: 0; 
 	padding: 0;
 }
+
+/*.images {
+	background-image: url("skyshot.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	height: 1000px;
+	width: 1400px;
+	z-index: -1;
+}*/
+
+#name {
+	text-align: center;
+	margin-top: 200px;
+}
+.box1, .box2, .box3 {
+	height: 300px;
+	width: 300px;
+	background-color: black;
+	color: white;
+	list-style: none;
+	display: inline-block;
+	margin-top: 100px;
+	margin-right: 50px;
+	margin-left: 50px;
+
+}
+
