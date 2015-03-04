@@ -17,36 +17,23 @@
 
 $(document).on("page:change", function(){
 
-	$('#first-circle').hover(function() {
-	   $("#second-circle").hide(500);
-	   $("#third-circle").hide(500);
+	$('#box1').hover(function() {
+	   $("#first-circle").hide(500);
+	 }, function() {
+	   $("#first-circle").show(500);
 	 });
 
-	$('#first-circle').mouseleave(function() {
+	$('#box2').hover(function() {
+	   $("#second-circle").hide(500);
+	 }, function() {
 	   $("#second-circle").show(500);
+	 });
+
+	$('#box3').hover(function() {
+	   $("#third-circle").hide(500);
+	 }, function() {
 	   $("#third-circle").show(500);
 	 });
 
-	$('#second-circle').hover(function() {
-	   $("#first-circle").hide(500);
-	   $("#third-circle").hide(500);
-	 });
-
-	$('#second-circle').mouseleave(function() {
-	   $("#first-circle").show(500);
-	   $("#third-circle").show(500);
-	 });
-
-	$('#third-circle').hover(function() {
-	   $("#second-circle").hide(500);
-	   $("#first-circle").hide(500);
-	 });
-
-	$('#third-circle').mouseleave(function() {
-	   $("#second-circle").show(500);
-	   $("#first-circle").show(500);
-	 });
  
 });
-
-s
