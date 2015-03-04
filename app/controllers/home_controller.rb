@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-  	@clinics = Clinic.all
+  	# @clinics = Clinic.all
   	# @hash = Gmaps4rails.build_markers(@clinics) do |clinic, marker|
   	# 	marker.lat clinic.latitude
    #    	marker.lng clinic.longitude
@@ -8,4 +8,3 @@ class HomeController < ApplicationController
    #  end
 	end
   end
-end

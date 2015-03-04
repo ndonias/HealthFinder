@@ -8,19 +8,19 @@ class Clinic
 		# @longitude = longitude
 	end
 
-	def self.all
-		CSV.foreach('clinics.csv') do |clinic|
-		  c = Clinic.new(clinic[0])
-		  if clinic[1].present?
-		  	c.address = clinic[1]
-		    c.latitude = clinic[7]
-			c.longitude = clinic[8]
-		  else
-		  	c.address = "Unknown"
-		  end
-		  c
-		end
-	end
+	# def self.all
+	# 	CSV.foreach('clinics.csv') do |clinic|
+	# 	  c = Clinic.new(clinic[0])
+	# 	  if clinic[1].present?
+	# 	  	c.address = clinic[1]
+	# 	    c.latitude = clinic[7]
+	# 		c.longitude = clinic[8]
+	# 	  else
+	# 	  	c.address = "Unknown"
+	# 	  end
+	# 	  c
+	# 	end
+	# end
 
 	def self.all_from_gdrive
 		# Authorizes with OAuth and gets an access token.
