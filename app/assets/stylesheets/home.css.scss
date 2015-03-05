@@ -103,7 +103,6 @@ html, body, #map {
 #box1{
   width:220px;
   height:220px;
-  border:1px solid black;
   background-color:rgba(0,0,0,0);
   z-index:10;
 }
@@ -111,7 +110,6 @@ html, body, #map {
 #box2{
   width:220px;
   height:220px;
-  border:1px solid black;
   background-color:rgba(0,0,0,0);
   z-index:10;
 }
@@ -119,14 +117,26 @@ html, body, #map {
 #box3{
   width:220px;
   height:220px;
-  border:1px solid black;
   background-color:rgba(0,0,0,0);
   z-index:10;
 }
 
 
+#circle_text1, #circle_text2{
+  font-size: 5em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  margin-left: .2em;
+}
 
-
+#circle_text3{
+  font-size: 6em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  margin-left: .2em;
+}
 
 #stats1{
   visibility: hidden;

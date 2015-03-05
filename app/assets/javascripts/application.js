@@ -23,7 +23,7 @@ $(document).on("page:change", function(){
 	   $("#first-circle").show(500);
 	 });
 
-	// $('#stats1').hover.append("<p># of New Yorkers that will become infected this year.</p>");
+	$('#stats1').hover("<p># of New Yorkers that will become infected this year.</p>");
 
 	$('#box2').hover(function() {
 	   $("#second-circle").hide(500);
