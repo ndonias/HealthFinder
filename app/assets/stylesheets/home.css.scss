@@ -250,18 +250,18 @@ a:hover {
 }
 
 #circle_text1, #circle_text2{
-  font-size: 5em;
+  font-size: 8em;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
+  line-height: 270px;
   margin-left: .2em;
 }
 
 #circle_text3{
-  font-size: 6em;
+  font-size: 8em;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
+  line-height: 270px;
   margin-left: .2em;
 }
 
@@ -272,5 +272,5 @@ a:hover {
 #stats1:hover, #stats2:hover, #stats3:hover {
   text-align: center;
   vertical-align: middle;
-  line-height:175px;
+  // line-height:175px;
 }
