@@ -19,6 +19,8 @@ gem 'gmaps4rails'
 gem 'geocoder'
 gem 'underscore-rails'
 
+gem 'simple_form'
+
 gem 'google_drive'
 
 # Use jquery as the JavaScript library
