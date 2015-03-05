@@ -2,13 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body, #map {
-	height: 100%; 
-	margin: 0; 
+html, body, {
+	height: 100%;
 	padding: 0;
-	// background-color:blue;
+	/*background-color: red;*/
 }
 
+#map {
+
+
+}
 .container-fluid {
 
 }
@@ -32,17 +35,17 @@ html, body, #map {
 	// border-style: 2px solid red;
 	/*position: fixed;*/
 	/*color:red;*/
-	width:100vw;
-	height:200px;
+	width: 100vw;
+	height: 200px;
 	/*border:10px solid red;*/
-	position:absolute;
-	z-index:10;
+	position: absolute;
+	z-index: 10;
 }
 
 #name_content {
 	font-size: 100px;
-	width:500px;
-	height:300px;
+	width: 500px;
+	height: 300px;
 	margin:0 auto;
 	color: red;
 	/*border:5px solid green;*/
@@ -55,24 +58,66 @@ html, body, #map {
 	display: inline-block;
 	margin-top: 100px;
 	margin-right: 20px;
-	margin-left: 50px;
+	margin-left: 60px;
 
 }
 .boxdiv {
 	height: 650px;
 	/*border:5px solid red;*/
-	margin-top:130px;
+	margin-top: 130px;
 	background-color: white;
 
 }
 
 #my-navbar {
-	width:100vw;
+	width: 100vw;
 }
 
 /*articles*/
-.read {
+a:hover {
 	text-decoration: none;
+}
+
+.empty {
+	background-image: url("brooklyn-bridge.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	height: 600px;
+	width: 100vw;
+	z-index: -1;
+
+}
+
+.picture {
+	background-image: url("Freedom.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	height: 700px;
+	width: 100vw;
+	z-index: -1;
+
+}
+
+.pictureart {
+	background-image: url("NYC.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+	height: 700px;
+	width: 100vw;
+	z-index: -1;
+
+}
+
+.containerarticles {
+	height: 450px;
+	/*border:5px solid red;*/
+	/*margin-top: 100px;*/
+	/*background-color: blue;*/
+
 }
 
 
@@ -81,11 +126,15 @@ html, body, #map {
 
 
 
-
-
-
-
-
+.row {
+	height: 500px;
+	/*border:5px solid red;*/
+	/*margin-top:130px;
+	background-color: white;*/
+	text-align: justify;
+	/*margin-left: 20px;
+	margin-right: 20px;*/
+}
 
 
 
@@ -96,31 +145,31 @@ html, body, #map {
   background-color: red;
   text-align: center;
   position:absolute;
-  z-index:-5;
+  z-index: -5;
 }
 
 #box1{
-  width:220px;
-  height:220px;
+  width: 100vw;
+  height: 600px;
   border:1px solid black;
-  background-color:rgba(0,0,0,0);
-  z-index:10;
+  background-color: rgba(0,0,0,0);
+  z-index: 10;
 }
 
 #box2{
-  width:220px;
-  height:220px;
-  border:1px solid black;
-  background-color:rgba(0,0,0,0);
-  z-index:10;
+  width: 220px;
+  height: 220px;
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0);
+  z-index: 10;
 }
 
 #box3{
-  width:220px;
-  height:220px;
-  border:1px solid black;
-  background-color:rgba(0,0,0,0);
-  z-index:10;
+  width: 220px;
+  height: 220px;
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0);
+  z-index: 10;
 }
 
 
@@ -138,14 +187,14 @@ html, body, #map {
   visibility: hidden;
   text-align: center;
   vertical-align: middle;
-  line-height:175px;
+  line-height: 175px;
 }
 
 #stats3{
   visibility: hidden;
   text-align: center;
   vertical-align: middle;
-  line-height:175px;
+  line-height: 175px;
 }
 
 
