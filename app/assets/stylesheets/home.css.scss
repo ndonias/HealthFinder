@@ -41,7 +41,7 @@ html, body, {
 	/*color:red;*/
 	width: 100vw;
 	height: 200px;
-	/*border:10px solid red;*/
+	border:10px solid red;
 	position: absolute;
 	z-index: 10;
 }
@@ -49,10 +49,16 @@ html, body, {
 #name_content {
 	font-size: 100px;
 	width: 500px;
-	height: 300px;
+	height: 150px;
 	margin:0 auto;
 	color: red;
-	/*border:5px solid green;*/
+	border:5px solid green;
+}
+
+#name_content1 {
+  font-size: 1.5em;
+  margin:0 auto;
+  color: red;
 }
 .box1, .box2, .box3 {
 	height: 330px;
@@ -64,12 +70,22 @@ html, body, {
 	margin-right: 20px;
 	margin-left: 50px;
 }
+<<<<<<< HEAD
 .boxdiv {
 	height: 650px;
 	/*border:5px solid red;*/
 	margin-top: 130px;
 	background-color: white;
 }
+
+// .boxdiv {
+// 	height: 650px;
+// 	border:5px solid red;
+// 	margin-top: 130px;
+// 	background-color: white;
+
+// }
+
 
 #my-navbar {
 	width: 100vw;
@@ -128,12 +144,22 @@ a:hover {
 	margin-right: 20px;*/
 }
 
+<<<<<<< HEAD
 .containersign {
 	height: 150px;
 	margin-bottom: 200px;
 	margin-right: 50px;
 	color: red;
 }
+
+// .containersign {
+// 	height: 150px;
+// 	margin-bottom: 200px;
+// 	margin-right: 50px;
+// 	color: red;
+
+// }
+
 
 
 
@@ -229,19 +255,19 @@ section {
 }
 
 #circle_text1, #circle_text2{
-  font-size: 5em;
+  font-size: 8em;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
+  line-height: 270px;
   margin-left: .2em;
 }
 
 #circle_text3{
-  font-size: 6em;
+  font-size: 8em;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
-  margin-left: .2em;
+  line-height: 270px;
+  margin-left: .3em;
 }
 
 #stats1, #stats2, #stats3 {
