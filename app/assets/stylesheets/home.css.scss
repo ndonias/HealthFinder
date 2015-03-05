@@ -7,7 +7,6 @@ html, body, #map-canvas {
 	margin: 0; 
 	padding: 0;
 }
-<<<<<<< HEAD
 .container {
 
 }
@@ -191,12 +190,19 @@ html, body, #map-canvas {
 
 
 
-// #stats1{
-//   visibility: hidden;
-//   text-align: center;
-//   vertical-align: middle;
-//   line-height:175px;
-// }
+#stats1{
+  visibility: hidden;
+  text-align: center;
+  vertical-align: middle;
+  line-height:175px;
+}
+
+
+#stats1:hover {
+  text-align: center;
+  vertical-align: middle;
+  line-height:175px;
+}
 
 #stats2{
   visibility: hidden;
