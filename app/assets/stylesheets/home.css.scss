@@ -7,10 +7,14 @@ html, body, {
 	padding: 0;
 	/*background-color: red;*/
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 903a0872b4721934354c0aa5ff7edcaf3a0c7e16
 
-#map {
+#map {}
 
+<<<<<<< HEAD
 }
 
 .container {
@@ -19,6 +23,8 @@ html, body, {
 .container-fluid {
 
 }
+=======
+>>>>>>> 903a0872b4721934354c0aa5ff7edcaf3a0c7e16
 .images {
 	background-image: url("skyshot.jpg");
 	background-repeat: no-repeat;
@@ -185,6 +191,52 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .circle{
   border-radius: 50% 50%;
   width: 200px;
@@ -195,64 +247,35 @@ a:hover {
   z-index: -5;
 }
 
-#box1{
-  width: 100vw;
-  height: 600px;
-  border:1px solid black;
-  background-color: rgba(0,0,0,0);
-  z-index: 10;
+#box1, #box2, #box3{
+  width:220px;
+  height:220px;
+  background-color:rgba(0,0,0,0);
+  z-index:10;
 }
 
-#box2{
-  width: 220px;
-  height: 220px;
-  border: 1px solid black;
-  background-color: rgba(0,0,0,0);
-  z-index: 10;
+#circle_text1, #circle_text2{
+  font-size: 5em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  margin-left: .2em;
 }
 
-#box3{
-  width: 220px;
-  height: 220px;
-  border: 1px solid black;
-  background-color: rgba(0,0,0,0);
-  z-index: 10;
+#circle_text3{
+  font-size: 6em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  margin-left: .2em;
 }
 
+#stats1, #stats2, #stats3 {
+  display: none;
+}
 
- 
-
-
-
-
-
-#stats1{
-  visibility: hidden;
+#stats1:hover, #stats2:hover, #stats3:hover {
   text-align: center;
   vertical-align: middle;
   line-height:175px;
 }
-
-
-#stats1:hover {
-  text-align: center;
-  vertical-align: middle;
-  line-height:175px;
-}
-
-#stats2{
-  visibility: hidden;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 175px;
-}
-
-#stats3{
-  visibility: hidden;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 175px;
-}
-
-
-

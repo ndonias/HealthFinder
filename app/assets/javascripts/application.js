@@ -23,7 +23,11 @@ $(document).on("page:change", function(){
 	   $("#first-circle").show(500);
 	 });
 
-	// $('#stats1').hover.append("<p># of New Yorkers that will become infected this year.</p>");
+	$('#box1').hover(function(){
+		$("#stats1").fadeIn(500);
+	}, function() {
+		$("#stats1").fadeOut(500);
+	});
 
 	$('#box2').hover(function() {
 	   $("#second-circle").hide(500);
@@ -31,11 +35,23 @@ $(document).on("page:change", function(){
 	   $("#second-circle").show(500);
 	 });
 
+	$('#box2').hover(function(){
+		$("#stats2").fadeIn(500);
+	}, function() {
+		$("#stats2").fadeOut(500);
+	});
+
 	$('#box3').hover(function() {
 	   $("#third-circle").hide(500);
 	 }, function() {
 	   $("#third-circle").show(500);
 	 });
+
+	$('#box3').hover(function(){
+		$("#stats3").fadeIn(500);
+	}, function() {
+		$("#stats3").fadeOut(500);
+	});
 
  
 });
