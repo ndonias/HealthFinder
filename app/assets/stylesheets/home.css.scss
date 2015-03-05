@@ -7,10 +7,14 @@ html, body, {
 	padding: 0;
 	/*background-color: red;*/
 }
+<<<<<<< HEAD
 
 #map {
 
 
+=======
+.container {
+>>>>>>> 025f3e9d0de3b50d0a2122706957c3145b7114f5
 }
 .container-fluid {
 
@@ -176,12 +180,19 @@ a:hover {
 
 
 
-// #stats1{
-//   visibility: hidden;
-//   text-align: center;
-//   vertical-align: middle;
-//   line-height:175px;
-// }
+#stats1{
+  visibility: hidden;
+  text-align: center;
+  vertical-align: middle;
+  line-height:175px;
+}
+
+
+#stats1:hover {
+  text-align: center;
+  vertical-align: middle;
+  line-height:175px;
+}
 
 #stats2{
   visibility: hidden;
