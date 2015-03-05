@@ -2,13 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body, #map-canvas {
+html, body, #map {
 	height: 100%; 
 	margin: 0; 
 	padding: 0;
+	// background-color:blue;
 }
-<<<<<<< HEAD
-.container {
+
+.container-fluid {
 
 }
 .images {
@@ -16,8 +17,8 @@ html, body, #map-canvas {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-	height: 1000px;
-	width: 1400px;
+	height: 1800px;
+	width: 100vw;
 	z-index: -1;
 
 }
@@ -26,14 +27,14 @@ html, body, #map-canvas {
 	//font-style: helvetica;
 	//font-size: 100px;
 	// text-align: center;
-	margin-top: 200px;
+	margin-top: 300px;
 	// background-color: black;
 	// border-style: 2px solid red;
 	/*position: fixed;*/
-	color:red;
+	/*color:red;*/
 	width:100vw;
 	height:200px;
-	border:10px solid red;
+	/*border:10px solid red;*/
 	position:absolute;
 	z-index:10;
 }
@@ -41,103 +42,38 @@ html, body, #map-canvas {
 #name_content {
 	font-size: 100px;
 	width:500px;
-	height:200px;
+	height:300px;
 	margin:0 auto;
-	border:5px solid green;
+	color: red;
+	/*border:5px solid green;*/
 }
 .box1, .box2, .box3 {
-	height: 400px;
+	height: 350px;
 	width: 300px;
 	background-color: black;
 	list-style: none;
 	display: inline-block;
 	margin-top: 100px;
-	margin-right: 50px;
-	margin-left: 80px;
+	margin-right: 20px;
+	margin-left: 50px;
 
 }
 .boxdiv {
-	height: 600px;
-	border:5px solid red;
-	background-color: rgba(242, 134, 134, 0.1)
+	height: 650px;
+	/*border:5px solid red;*/
+	margin-top:130px;
+	background-color: white;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#my-navbar {
+	width:100vw;
+}
+
+/*articles*/
+.read {
+	text-decoration: none;
+}
 
 
 
@@ -211,18 +147,6 @@ html, body, #map-canvas {
   vertical-align: middle;
   line-height:175px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
