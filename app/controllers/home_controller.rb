@@ -10,5 +10,5 @@ class HomeController < ApplicationController
 			html = "<h4>#{clinic.name}</h4>Phone: #{clinic.number}</br>Address: #{clinic.address}"
 			{lat: clinic.latitude.to_s, lng: clinic.longitude.to_s, description: clinic.name, title: clinic.name, borough: clinic.borough, infowindow: html, sidebar: html}
      	end
-	end
+     end
 end
