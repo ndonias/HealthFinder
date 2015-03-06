@@ -42,7 +42,7 @@ class Clinic
 		# puts "*" * 40
 		# puts auth.access_token
 		# puts "*" * 40
-		access_token = "ya29.LgH9Rx1s5dJNPogrClm7VV79h1rnL8wDLJNVzTwbNyJsADS-El3wSLbUMu1Hh_0Nm6X5SJaUqv3LZA"
+		access_token = "ya29.LgEvT_JIWUx5liUzmZ_WBWlhqYbCew3HO-DC8Q8OPDF77mt4fXOcGWuMLSf6C0zgOHg4HqRjf4uJOw"
 		# ENV["CLINIC_ACCESS_TOKEN"]
 		# Creates a session.
 		session = GoogleDrive.login_with_oauth(access_token)
