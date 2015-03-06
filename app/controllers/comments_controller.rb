@@ -12,22 +12,22 @@ class CommentsController < ApplicationController
 
 
   def new
-    if current_user
-     @comment = Comment.new
-     @article = Post.find(params[:article_id])
+    @article = Article.find(params[:aritcle_id])
+    @comment=@article.comments.create(comment_params)
+    @comment.user=current_user
+    if @comment.save
+      redirect_to @article
     else
-      flash[:notice] = "Please sign in first."
-      redirect_to signin_path
+      flash.now[:danger] = 'error'
     end
+  end
 
 
   
   def edit
-    if current_user == @comment.user
-      set_comment
-    else
-      redirect_to @comment.post
-    end
+    @comment = Comment.find(params[:id])
+    @article = @comment.post
+    @comment.user = current_user
   end
 
   def show
