@@ -22,7 +22,7 @@ html, body, {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-	height: 1550px;
+	height: 1700px;
 	width: 100vw;
 	z-index: -1;
 
@@ -39,7 +39,7 @@ html, body, {
 	/*color:red;*/
 	width: 100vw;
 	height: 200px;
-	border:10px solid red;
+	/*border:10px solid red;*/
 	position: absolute;
 	z-index: 10;
 }
@@ -50,13 +50,18 @@ html, body, {
 	height: 150px;
 	margin:0 auto;
 	color: red;
-	border:5px solid green;
+	margin-top: 100px;
+	/*border:5px solid green;*/
+}
+.row1 {
+	margin-top: 70px;
 }
 
 #name_content1 {
   font-size: 1.5em;
   margin:0 auto;
   color: red;
+  /*margin-left: 10px;*/
 }
 .box1, .box2, .box3 {
 	height: 330px;
@@ -69,20 +74,15 @@ html, body, {
 	margin-left: 50px;
 }
 
-.boxdiv {
+
+
+ .boxdiv {
 	height: 650px;
 	/*border:5px solid red;*/
-	margin-top: 130px;
-	background-color: white;
-}
+	/*margin-top: 130px;*/
+ 	background-color: white;
 
-// .boxdiv {
-// 	height: 650px;
-// 	border:5px solid red;
-// 	margin-top: 130px;
-// 	background-color: white;
-
-// }
+ }
 
 
 #my-navbar {
@@ -109,7 +109,7 @@ a:hover {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-	height: 700px;
+	height: 600px;
 	width: 100vw;
 	z-index: -1;
 }
@@ -120,7 +120,7 @@ a:hover {
 	background-attachment: fixed;
     background-position: center;
     background-size: cover;
-	height: 700px;
+	height: 600px;
 	width: 100vw;
 	z-index: -1;
 }
