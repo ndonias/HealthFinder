@@ -2,7 +2,8 @@
 
 		<section>
 		<div >
-		<a class="twitter-timeline" href="https://twitter.com/hiv_nyc" data-widget-id="573618627972308992">Tweets by @hiv_nyc</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<a class="twitter-timeline" href="https://twitter.com/hiv_nyc" data-widget-id="573618627972308992">Tweets by @hiv_nyc</a> 
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 		
 		<div class="res">
@@ -12,6 +13,17 @@
 		<a href="https://blog.aids.gov/" title="blog.aids.gov"><img src="https://blog.aids.gov/wp-content/uploads/blog-badge.png"   width="200" height="75" alt="blog.aids.gov" /></a></div>
 		</div>
 		</section>
+
+		<div class=articles-list>
+			<ul>
+				<% @articles.each do |article| %>
+				<li>
+					<%=link_to article.title, article_path(article)%>
+					<%=article.body%>
+				</li>
+			</ul>
+			<%end%>
+		</div>
 
 		<!--<dev class="sectiontwo">!-->
 
