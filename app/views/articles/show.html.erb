@@ -1,8 +1,18 @@
-<h1>Your Article</h1>
+<h1><%=@article.title%></h1>
+	<p> <%=@article.body%> </p>
+	
+	<%=render '/comments/form' %>
 
-<h1><%= @article.title %></h1>
-<p><%= @article.body %></p>
+	<h3> Comments <h3>
+	
+	<% @post.comments.each do |comment|%>
+		<ul style="list-style: none;" >
+				<%= comment.body %>		</ul>
+				<% if current_user==comment.user %>
+				<%= link_to 'Edit', edit_post_comment_path(@post, comment)%>
+				<%= link_to 'Delete', [comment.post, comment],
+               		:confirm => 'Are you sure?',
+              		:method => :delete %>
 
-<%= link_to 'new article', new_article_path %>
-<!--<%= link_to 'articlelist', root_path %> !-->
-
+	<% end%>
+	<% end %>
