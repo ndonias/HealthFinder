@@ -11,13 +11,19 @@
 				<a href="" class="navbar-brand">NYC-SRC</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<a href="#signin" class="btn btn-info navbar-btn navbar-right">Sign in</a>
+
+			<% if user_signed_in? %>
+			<a href="#Signin" class="btn btn-info navbar-btn navbar-right">Sign Out</a>
+		
+			<% else %>
+
+				<a href="#Signin" class="btn btn-info navbar-btn navbar-right">Sign in</a>
+			<% end %>
+
 				<ul class="nav navbar-nav">
 					<li><a href="#Map">Map</a>
 					<li><a href="#Stats">Stats</a>
 					<li><a href="#Articles">Articles</a>
-					<li><a href="#Signin">Signin</a>
-
 				</ul>
 			</div>
 		</div>
