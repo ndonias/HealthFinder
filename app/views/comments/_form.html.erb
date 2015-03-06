@@ -1,11 +1,7 @@
-<%= form_for @comment do |f| %>
+<%= form_for [@article, @comment] do |c| %>
 
-	<%= f.text_field :username, placeholder: :username %><br />
+	<%=c.label :body, 'Comment' %>
+	<%=c.text_area :body %> <br/>
 
-	<%= f.text_ :comment, placeholder: :comment %><br />
-
-	<%= f.submit %>
-
-	<% end %>
-
-
+	<%=c.submit %>
+<% end %>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
 	<div class="container">
 		<!-- <p class="notice"><%= notice %></p>
@@ -18,6 +19,36 @@
 				<li><a href="#Info">Information</a>
 				<li><a href="#Signin">Signin</a>
 			</ul>
+=======
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="container">
+			<!-- <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p> -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand">NYC-SRC</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+
+			<% if user_signed_in? %>
+			<a href="#Signin" class="btn btn-info navbar-btn navbar-right">Sign Out</a>
+		
+			<% else %>
+
+				<a href="#Signin" class="btn btn-info navbar-btn navbar-right">Sign in</a>
+			<% end %>
+
+				<ul class="nav navbar-nav">
+					<li><a href="#Map">Map</a>
+					<li><a href="#Stats">Stats</a>
+					<li><a href="#Articles">Articles</a>
+				</ul>
+			</div>
+>>>>>>> c404d0b5d5dfa81290f2164908b3890721faa70e
 		</div>
 	</div>
 </nav>
