@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   def index
-    @Articles = Article.all
+    @articles = Article.all
   end
 
   def new
@@ -24,7 +24,7 @@ class ArticlesController < ApplicationController
 
   def create
   @article = Article.create(article_params)
-  redirect_to @article, notice: "New article created."
+  redirect_to articles_path, notice: "New article created."
   end
 
   def destroy

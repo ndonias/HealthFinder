@@ -97,8 +97,11 @@ html, body, {
 
 
 /*articles*/
-a:hover {
-	text-decoration: none;
+
+p {
+	padding: 15px;
+	line-height: 26px;
+	font-size: 18px;
 }
 
 .empty {
@@ -286,6 +289,8 @@ section {
 #stats1:hover, #stats2:hover, #stats3:hover {
   text-align: center;
   vertical-align: middle;
+  line-height:175px;
+  font-size: 20px;
   /*line-height:175px;*/
 }
 
