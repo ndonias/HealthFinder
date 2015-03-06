@@ -1,23 +1,60 @@
-<a id="Map"></a>
+<h2>Find a Health Clinic</h2>
+   
+   <h3>Search by Borough</h3>
+		
+		<div id="filter">
+		<ul style= "list-style: none">
+				<li><input type="radio" name="borough" id="bronxCheckbox" onclick="toggleGroup('Bronx')"/> Bronx
+				</li>
+				<li><input type="radio" name="borough" id="brooklynCheckbox" onclick="toggleGroup('Brooklyn')"/> Brooklyn
+				</li>
+				<li><input type="radio" name="borough" id="manhattanCheckbox" onclick="toggleGroup('Upper Manhattan')"/> Upper Manhattan
+				</li>
+				<li><input type="radio" name="borough" id="manhattanCheckbox" onclick="toggleGroup('Lower Manhattan')"/> Lower Manhattan
+				</li>
+				<li><input type="radio" name="borough" id="queensCheckbox" onclick="toggleGroup('Queens')"/> Queens
+				</li>
+				<li><input type="radio" name="borough" id="statenCheckbox" onclick="toggleGroup('Staten Island')"/> Staten Island
+				</li>
+			</ul>
 
+		</div>
 
-<h2> Find A Health Location </h2>
+	<div style= "width: 1000px;">
+			<div id="map" style="width: 50%; height: 400px;"></div>
+	</div>
 
-
-<h3> Map should appear here!</h3>
-<div style= "width: 800px;">
-	<div id="map" style="width: 100%; height: 600px;"></div>
-</div>
 
 <script type="text/javascript">
-handler= Gmaps.build('Google');
-handler.buildMap(
-	{provider: {}, internal: {id:'map'}},
-	function() {
-		markers = handler.addMarkers(<%= raw @hash.to_json %>);
-		handler.bounds.extendWith(markers);
+ 	clinics = <%= raw @hash.to_json %>;
+	handler = Gmaps.build('Google');
+	handler.buildMap(
+ 	{provider: {}, internal: {id:'map'}},
+ 	function() {
+ 		markers = handler.addMarkers(clinics);
+ 		handler.bounds.extendWith(markers);
 		handler.fitMapToBounds();
+    	// Gmaps.map.markers[0].serviceObject.setVisible(true);
 	});
-</script>
 
-<div class="empty"></div>
+	function toggleGroup(borough) {
+	  	var selected_clinics = [];
+	    for (var i = 0; i < clinics.length; i++) {
+	    	// var marker = marker[borough][i];
+		    if (clinics[i].borough == borough) {
+		      selected_clinics.push(clinics[i])
+		    }
+		}
+	  	handler = Gmaps.build('Google');
+		handler.buildMap(
+	 	{provider: {}, internal: {id:'map'}},
+		function() {
+	 		markers = handler.addMarkers(selected_clinics);
+	 		handler.bounds.extendWith(markers);
+			handler.fitMapToBounds();
+	    	// Gmaps.map.markers[0].serviceObject.setVisible(true);
+
+		}); 
+	};
+
+</script>
