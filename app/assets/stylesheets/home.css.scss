@@ -98,6 +98,14 @@ p {
 	font-size: 18px;
 }
 
+.article-show {
+	padding-left: .5em;
+}
+
+#show-article {
+	margin: 0 auto;
+}
+
 .empty {
 	background-image: url("brooklyn-bridge.jpg");
 	background-repeat: no-repeat;
@@ -177,7 +185,7 @@ section {
 	/*float: right;*/
 	margin-bottom: 50px;
 	height: 500px;
-	width: 1300px;
+	max-width: 1300px;
 	/*background-color: grey;*/
 	/*margin: 100px 100px 100px 100px;*/
 	/*border: 2px solid black;*/
@@ -217,23 +225,6 @@ section {
 // 	height: 600px;
 // 	width: 600px;
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -288,5 +279,14 @@ section {
   /*line-height:175px;*/
 }
 
+#show1 {
+	font-size: 50px;
+}
+#show2 {
+	font-size: 50px;
+}
+#show3 {
+	font-size: 50px;
+}
 
 

@@ -1,8 +1,18 @@
-<h1>Your Article</h1>
+<!-- <h1></h1> -->
 
-<h1><%= @article.title %></h1>
-<p><%= @article.body %></p>
 
-<%= link_to 'new article', new_article_path %>
-<!--<%= link_to 'articlelist', root_path %> !-->
+
+<!--<%# link_to 'new article', new_article_path %>!-->
+<!--<%# link_to 'articlelist', root_path %> !-->
+
+<div class="container-fluid">
+	<div class="row">
+
+			<div class="col-md-8 col-md-offset-2" id="show3">
+				<h2 class="article-show"><%= @article.title %></h2>
+				<p><%= @article.body %></p>
+			</div>
+	</div>
+</div>
+
 
