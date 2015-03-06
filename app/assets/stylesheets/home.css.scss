@@ -12,9 +12,7 @@ html, body, {
 #map {}
 
 
-.container {
 
-}
 .container-fluid {
 
 }
@@ -24,7 +22,7 @@ html, body, {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-	height: 1800px;
+	height: 1550px;
 	width: 100vw;
 	z-index: -1;
 
@@ -70,7 +68,7 @@ html, body, {
 	margin-right: 20px;
 	margin-left: 50px;
 }
-<<<<<<< HEAD
+
 .boxdiv {
 	height: 650px;
 	/*border:5px solid red;*/
@@ -144,13 +142,13 @@ a:hover {
 	margin-right: 20px;*/
 }
 
-<<<<<<< HEAD
-.containersign {
-	height: 150px;
-	margin-bottom: 200px;
+
+#sign {
+	height: 200px;
+	margin-bottom: 250px;
 	margin-right: 50px;
-	color: red;
-}
+	margin-top: 40px;
+ }
 
 // .containersign {
 // 	height: 150px;
@@ -272,12 +270,14 @@ section {
 
 #stats1, #stats2, #stats3 {
   display: none;
+  font-size: 30px;
+
 }
 
 #stats1:hover, #stats2:hover, #stats3:hover {
   text-align: center;
   vertical-align: middle;
-  line-height:175px;
+  /*line-height:175px;*/
 }
 
 
