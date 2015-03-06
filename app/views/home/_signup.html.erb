@@ -1,16 +1,4 @@
 <a id="Signin"></a>
-<div class="row" id="sign">
-	<div class="col-md-3">
-		<h2>Sign In</h2>
-
-		<%= simple_form_for(:user, :url => session_path(:user)) do |f| %>
-		  <%= f.text_field :email, placeholder: :email%> <br/><br/>
-		  <%= f.password_field :password, placeholder: :password %> <br/><br/>
-		  <%= f.submit 'Sign in', :class => "btn" %> <br/><br/>
-		  <%= f.check_box :remember_me %> 
-		  <%= f.label :remember_me %><br/>
-		  <%= link_to "Forgot your password?", new_password_path(:user) %> <br/>
-		<% end %>
 <% if user_signed_in? %>
 	<div class="container">
 		<div class="row" id="sign">
