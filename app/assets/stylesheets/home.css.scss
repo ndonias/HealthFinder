@@ -2,13 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body, {
-	height: 100%;
-	padding: 0;
+// html, body, {
+// 	height: 100%;
+// 	padding: 0;
 
 	
 	/*background-color: red;*/
-}
+// }
 #my-navbar {
 	width: 100vw;
 	height: 60px;
@@ -197,9 +197,9 @@ p {
 
 section {
 	/*float: right;*/
-	margin-bottom: 50px;
-	height: 500px;
-	max-width: 1300px;
+	// margin-bottom: 50px;
+	// height: 500px;
+	// max-width: 1300px;
 	/*background-color: grey;*/
 	/*margin: 100px 100px 100px 100px;*/
 	/*border: 2px solid black;*/
@@ -211,10 +211,13 @@ section {
 	/*display: inline-block;*/
 	height: 400px;
 	width: 600px;
-	/*margin-right: 100px;*/
-	padding-bottom: 50px;
-	margin-top: 20px;
-	margin-bottom: 50px;
+	position: absolute;
+    left: 100px;
+    top: 150px;
+	// /*margin-right: 100px;*/
+	// padding-bottom: 50px;
+	// margin-top: 20px;
+	// margin-bottom: 50px;
 }
 #moved {
 	margin-top: 20px;
