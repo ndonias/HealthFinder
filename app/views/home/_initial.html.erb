@@ -1,8 +1,5 @@
-
 <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-<div class="container">
-		<!-- <p class="notice"><%= notice %></p>
-   <p class="alert"><%= alert %></p> -->
+	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
 				<span class="icon-bar"></span>
@@ -12,75 +9,45 @@
 			<a href="" class="navbar-brand">NYC-SRC</a>
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse">
-			<a href="#signin" class="btn btn-info navbar-btn navbar-right">Sign in</a>
-			<ul class="nav navbar-nav">
-				<li><a href="#Map">Map</a>
-				<li><a href="#Stats">Stats</a>
-				<li><a href="#Info">Information</a>
-				<li><a href="#Signin">Signin</a>
-
-			</ul> </div>
-
-
-			</ul>
-
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-		<div class="container">
-			<!-- <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p> -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="" class="navbar-brand">NYC-SRC</a>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-
-			<% if user_signed_in? %>
+		<% if user_signed_in? %>
 			<a href="#Signin" class="btn btn-info navbar-btn navbar-right">Sign Out</a>
-		
-			<% else %>
+	
+		<% else %>
 
-				<a href="#Signin" class="btn btn-info navbar-btn navbar-right">Sign in</a>
-			<% end %>
+			<a href="#Signin" class="btn btn-info navbar-btn navbar-right">Sign in</a>
+		<% end %>
 
-				<ul class="nav navbar-nav">
-					<li><a href="#Map">Map</a>
-					<li><a href="#Stats">Stats</a>
-					<li><a href="#Info">Articles</a>
-				</ul>
-			</div>
-
-
+			<ul class="nav navbar-nav">
+				<li><a href="#Map">Map</a></li>
+				<li><a href="#Stats">Stats</a></li>
+				<li><a href="#Info">Articles</a></li>
+			</ul>
 		</div>
-
 	</div>
-</div>
 </nav>
 
-
-<div class="container-fluid">
-	<div id="name">
-		<h1 id="name_content">NYC-SRC</h1>
-		<div class="row1">
-				<div class="col-md-4" id="name_content1"><h1>STATUS</h1>
-				</div>
-				<div class="col-md-4" id="name_content1"><h1>RESOURCES</h1></div>
-				<div class="col-md-4" id="name_content1"><h1>CONNECTIONS</h1></div>	
+<div class="images">
+<div class="container">
+	<div class="row">
+		<div class="com-md-12">
+			<h1 id="name_content">NYC-SRC</h1>
 		</div>
-			<!-- </div>	
-			<div class="row">
- -->
-			<div class="boxdiv">
-			<div class="col-md-4"><%= image_tag('group-pic.jpg', class: "box1") %></div>
-			<div class="col-md-4"><%= image_tag('redribbon.jpg', class: "box2") %></div>
-			<div class="col-md-4"><%= image_tag('young-guy.jpg', class: "box3") %></div>
+	</div>
+	<div class="row">
+		<div class="col-md-4" id="name_content1">
+			<h1>STATUS</h1> 
+			<%= image_tag('group-pic.jpg', class: "box1") %>
 		</div>
-
-	</div> 
+		<div class="col-md-4" id="name_content1">
+			<h1>RESOURCES</h1>
+			<%= image_tag('redribbon.jpg', class: "box2") %>
+		</div>
+		<div class="col-md-4" id="name_content1">
+			<h1>CONNECTIONS</h1>
+			<%= image_tag('young-guy.jpg', class: "box3") %>
+		</div>
+	</div>
 </div>
-	
-<div class="images"></div>
+</div>
+
 

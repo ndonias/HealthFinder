@@ -1,10 +1,14 @@
 <a id="Map"></a>
-<div class="container">
-	<div class="row">
-		<div class="page-header">
-			<h2> Know Your Status - Search below to find a free testing center </h2>
-		</div>   
+	<div class="container">
+		<div class="row">
+			<div class="page-header">
+				<h2> Know Your Status - Search below to find a free testing center </h2>
+			</div>   
    <h3>Search by Borough</h3>
+   		</div>
+   	</div>
+
+   	<div class="container">
 		
 		<div id="filter">
 		<ul style= "list-style: none">
@@ -21,12 +25,15 @@
 				<li><input type="radio" name="borough" id="statenCheckbox" onclick="toggleGroup('Staten Island')"/> Staten Island
 				</li>
 			</ul>
-
 		</div>
-
-	<div style= "width: 1000px;">
-			<div id="map" style="width: 50%; height: 400px;"></div>
 	</div>
+
+		<div style= "width: 100vw;">
+				<div id="map" style="width: 50%; height: 400px;"></div>
+		</div>
+	</div>
+</div>
+
 <script type="text/javascript">
  	clinics = <%= raw @hash.to_json %>;
 	handler = Gmaps.build('Google');
@@ -36,7 +43,6 @@
  		markers = handler.addMarkers(clinics);
  		handler.bounds.extendWith(markers);
 		handler.fitMapToBounds();
-    	// Gmaps.map.markers[0].serviceObject.setVisible(true);
 	});
 
 	function toggleGroup(borough) {
@@ -54,13 +60,9 @@
 	 		markers = handler.addMarkers(selected_clinics);
 	 		handler.bounds.extendWith(markers);
 			handler.fitMapToBounds();
-	    	// Gmaps.map.markers[0].serviceObject.setVisible(true);
-
 		}); 
 	};
-
 </script>
-</div>
 
 <div class="empty"></div>
 

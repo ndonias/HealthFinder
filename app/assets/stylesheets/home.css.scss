@@ -2,30 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// html, body, {
-// 	height: 100%;
-// 	padding: 0;
-
-	
-	/*background-color: red;*/
-// }
-#my-navbar {
-	width: 100vw;
-	height: 60px;
+html, body, {
+ 	height: 100%;
+ 	padding: 0;
 }
-/*
-#map{
-	float: left;
-	overflow: none;
-}*/
 
 #map-info {
 	display: inline-block;
-}
-
-
-
-.container-fluid {
 }
 
 .images {
@@ -33,25 +16,20 @@
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-	height: 1800px;
+	height: 1300px;
 	width: 100vw;
 	z-index: -1;
-	margin-left:-30px;
-
 }
 
 #name {
-	//font-style: helvetica;
-	//font-size: 100px;
-	// text-align: center;
+	font-style: helvetica;
+	font-size: 100px;
+	text-align: center;
 	margin-top: 230px;
-	// background-color: black;
-	// border-style: 2px solid red;
-	/*position: fixed;*/
-	/*color:red;*/
+	background-color: black;
+	border-style: 2px solid red;
 	width: 100vw;
 	height: 200px;
-	/*border:10px solid red;*/
 	position: absolute;
 	z-index: 10;
 }
@@ -60,44 +38,23 @@
 	font-size: 100px;
 	width: 500px;
 	height: 150px;
-	margin:0 auto;
+	margin: 0 auto;
 	color: red;
-	margin-top: 100px;
-	/*border:5px solid green;*/
-}
-.row1 {
-	margin-top: 70px;
-	margin-left: 95px;
+	margin-top: 325px;
 }
 
 #name_content1 {
+  padding-top: 200px;
   font-size: 1.5em;
-  margin:0 auto;
+  margin: 0 auto;
   color: red;
 }
+
 .box1, .box2, .box3 {
-	height: 330px;
-	width: 350px;
-	/*background-color: black;*/
+	background-color: black;
 	list-style: none;
 	display: inline-block;
-	margin-top: 100px;
-	margin-right: 20px;
-	margin-left: 50px;
 }
-
-
-
- .boxdiv {
-	height: 650px;
-	/*border:5px solid red;*/
-	/*margin-top: 130px;*/
- 	background-color: white;
-
- }
-
-
-
 
 /*articles*/
 
@@ -133,22 +90,16 @@ p {
 	height: 600px;
 	width: 100vw;
 	z-index: -1;
-	// display: none;
-	/*border:2px solid green;*/
-	margin-left:-148px;
 }
 
 .pictureart {
-	background-image: url("NYC.jpeg");
+	background-image: url("Skyline.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
-    background-size: cover;
 	height: 600px;
 	width: 100vw;
 	z-index: -1;
-	margin-left:-148px;
-	// display:none;
 }
 
 .containerarticles {
@@ -158,17 +109,6 @@ p {
 	/*background-color: blue;*/
 }
 
-.row {
-	height: 700px;
-	/*border:5px solid red;*/
-	/*margin-top:130px;
-	background-color: white;*/
-	text-align: justify;
-	/*margin-left: 20px;
-	margin-right: 20px;*/
-}
-
-
 #sign {
 	height: 200px;
 	margin-bottom: 250px;
@@ -176,24 +116,14 @@ p {
 	margin-top: 40px;
  }
 
-// .containersign {
-// 	height: 150px;
-// 	margin-bottom: 200px;
-// 	margin-right: 50px;
-// 	color: red;
-
-// }
-
-
-
-
-
-
-
-
+.containersign {
+	height: 150px;
+	margin-bottom: 200px;
+	margin-right: 50px;
+	color: red;
+}
 
 /*articles page*/
-
 
 section {
 	/*float: right;*/
@@ -224,11 +154,6 @@ section {
 
 }
 
-/*.ntlhiv {
-	float: right;
-	margin: 60px 60px 40px 80px;
-	padding-top: 50px;
-	}*/
 
 .blog {
 	float: right;
@@ -246,10 +171,6 @@ section {
 // 	height: 600px;
 // 	width: 600px;
 // }
-
-
-
-
 
 
 .circle{
