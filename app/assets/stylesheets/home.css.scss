@@ -7,12 +7,85 @@ html, body, {
  	padding: 0;
 }
 
+.pic1{
+    background: url('group-pic.jpg');
+    width: 325px;
+    height: 275px;
+    border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    vertical-align: center;
+}
+
+.pic2{
+    background: url('redribbon.jpg');
+    border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    width: 325px;
+    height: 275px;
+    vertical-align: center;
+}
+
+.pic3{
+    background: url('young-guy.jpg');
+    width: 325px;
+    height: 275px;
+    border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    vertical-align: center;
+}
+
+
+
+.text{
+    background: black;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.text:hover{
+    opacity: 0.8;
+}
+
 .map-canvas{
 	padding-bottom: 100px;
 }
 
 #map-info {
 	display: inline-block;
+}
+.Bronx{
+	display: none;
+}
+.Brooklyn{
+	display: none;
+}
+
+.Upper {
+	display: none;
+}
+
+.Lower {
+	display: none;
+}
+
+.Staten {
+	display: none;
+}
+
+.Queens {
+	display: none;
 }
 
 .images {
@@ -58,6 +131,10 @@ html, body, {
 	background-color: black;
 	list-style: none;
 	display: inline-block;
+	border-radius: 50% 50%;
+  	width: 300px;
+  	height: 300px;
+  	text-align: center;
 }
 
 /*articles*/

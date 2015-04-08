@@ -2,7 +2,7 @@ class Clinic
 
 	require 'csv'
 
-	attr_accessor :name, :address, :latitude, :longitude, :zip, :borough, :number
+	attr_accessor :name, :hours, :address, :latitude, :longitude, :zip, :borough, :number
 
 	def initialize(name)
 		@name = name
@@ -24,6 +24,7 @@ class Clinic
 			c.zip = clinic[9]
 			c.borough = clinic[2]
 			c.number = clinic[3]
+			c.hours = clinic[5]
 		  else
 		  	c.address = "Unknown"
 		  end
