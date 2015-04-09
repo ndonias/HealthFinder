@@ -8,7 +8,7 @@ html, body, {
 }
 
 .pic1{
-    background: url(<%= asset_path 'group-pic.jpg' %>);
+    background: url('<%= asset_path('group-pic.jpg') %>');
     width: 325px;
     height: 275px;
     border-radius: 150px;
@@ -18,7 +18,7 @@ html, body, {
 }
 
 .pic2{
-    background: url(<%= asset_path 'redribbon.jpg' %>);
+    background: url('<%= asset_path('redribbon.jpg') %>');
     border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
@@ -28,7 +28,7 @@ html, body, {
 }
 
 .pic3{
-    background: url(<%= asset_path 'young-guy.jpg' %>);
+    background: url('<%= asset_path('young-guy.jpg') %>');
     width: 325px;
     height: 275px;
     border-radius: 150px;
@@ -89,7 +89,7 @@ html, body, {
 }
 
 .images {
-	background-image: url(<%= asset_path "skyshot.jpg" %>);
+	background-image: url('<%= asset_path("skyshot.jpg") %>');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
@@ -154,7 +154,7 @@ p {
 }
 
 .empty {
-	background-image: url(<%= asset_path "brooklyn-bridge.jpg" %>);
+	background-image: url('<%= asset_path("brooklyn-bridge.jpg") %>');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
@@ -164,7 +164,7 @@ p {
 }
 
 .picture {
-	background-image: url(<%= asset_path "Freedom.jpg" %>);
+	background-image: url('<%= asset_path("Freedom.jpg") %>');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
@@ -174,7 +174,7 @@ p {
 }
 
 .pictureart {
-	background-image: url(<%= asset_path "Skyline.jpg" %>);
+	background-image: url('<%= asset_path("Skyline.jpg") %>');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
     background-position: center;
