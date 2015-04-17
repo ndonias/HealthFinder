@@ -8,19 +8,47 @@
 	
 </div>
 	
-<div class="container">
+<!-- <div class="container">
 	<h3>Search by Borough</h3>
 	<div id="filter">
 	<ul style= "list-style: none">
-			<li><input type="radio" name="borough" id="bronxCheckbox" onclick="toggleGroup('Bronx')"/> Bronx <input type="radio" name="borough" id="brooklynCheckbox" onclick="toggleGroup('Brooklyn')"/> Brooklyn
-			<input type="radio" name="borough" id="manhattanCheckbox" onclick="toggleGroup('Upper Manhattan')"/> Upper Manhattan
+			<li><input type="radio" name="borough" id="bronxCheckbox" onclick="toggleGroup('Bronx')"/> Bronx </li>
+			<li><input type="radio" name="borough" id="brooklynCheckbox" onclick="toggleGroup('Brooklyn')"/> Brooklyn</li>
+			<li><input type="radio" name="borough" id="manhattanCheckbox" onclick="toggleGroup('Upper Manhattan')"/> Upper Manhattan
 			</li>
-			<li><input type="radio" name="borough" id="manhattanCheckbox" onclick="toggleGroup('Lower Manhattan')"/> Lower Manhattan
-			<input type="radio" name="borough" id="queensCheckbox" onclick="toggleGroup('Queens')"/> Queens <input type="radio" name="borough" id="statenCheckbox" onclick="toggleGroup('Staten Island')"/> Staten Island
+			<li><input type="radio" name="borough" id="manhattanCheckbox" onclick="toggleGroup('Lower Manhattan')"/> Lower Manhattan</li>
+			<li><input type="radio" name="borough" id="queensCheckbox" onclick="toggleGroup('Queens')"/> Queens </li>
+			<li><input type="radio" name="borough" id="statenCheckbox" onclick="toggleGroup('Staten Island')"/> Staten Island
 			</li>
 		</ul>
 	</div>
+</div> -->
+
+<div class="container">
+	<h3>Search by Borough</h3>
+	<div id="filter">
+		<select id= "place" onchange="toggleGroup()">
+			<option value="Bronx" > Bronx
+			</option>
+			<option value="Brooklyn">
+				Brooklyn
+			</option>
+			<option>
+				Queens
+			</option>
+			<option>
+				Upper Manhattan
+			</option>
+			<option>
+				Lower Manhattan
+			</option>
+			<option>
+				Staten Island
+			</option>
+		</select>
+	</div>
 </div>
+
 
 <div class="container">
 	<div class="row">
@@ -77,7 +105,9 @@ handler.buildMap({
   });
 	});
 
-	function toggleGroup(borough) {
+	function toggleGroup() {
+		console.log(document.getElementById("place").value)
+		var borough = document.getElementById("place").value
 	  	var selected_clinics = [];
 	    for (var i = 0; i < clinics.length; i++) {
 		    if (clinics[i].borough == borough) {
@@ -85,7 +115,6 @@ handler.buildMap({
 		      var boroughClass = clinics[i].borough
 
 		      var taco = "." + boroughClass.split(' ');
-		      console.log(taco)
 		      var blah =  taco.split(',')
 		      console.log(blah);
 		      $(blah[0]).css('display', 'block')
@@ -94,7 +123,6 @@ handler.buildMap({
 		      var boroughClass = clinics[i].borough
 
 		      var taco = "." + boroughClass.split(' ');
-		      console.log(taco)
 		      var blah =  taco.split(',')
 		      $(blah[0]).css('display', 'none')
 

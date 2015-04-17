@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'gmaps4rails'
 gem 'geocoder'
 gem 'underscore-rails'
+gem 'pg'
 
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
@@ -39,14 +40,9 @@ gem 'spring',        group: :development
 gem 'quiet_assets'
 
 group :production do 
-   gem 'pg'
    gem 'rails_12factor'
 end
 
-group :development do
-	# Use sqlite3 as the database for Active Record
-	gem 'sqlite3'
-end
 
 
 # Use ActiveModel has_secure_password

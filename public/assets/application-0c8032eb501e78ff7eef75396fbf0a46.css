@@ -1,0 +1,346 @@
+/* line 5, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+html, body {
+  height: 100%;
+  padding: 0;
+}
+
+/* line 10, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.pic1 {
+  background: url("/assets/group-pic.jpg");
+  width: 325px;
+  height: 275px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  vertical-align: center;
+}
+
+/* line 20, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.pic2 {
+  background: url("/assets/redribbon.jpg");
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  width: 325px;
+  height: 275px;
+  vertical-align: center;
+}
+
+/* line 30, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.pic3 {
+  background: url("/assets/young-guy.jpg");
+  width: 325px;
+  height: 275px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  vertical-align: center;
+}
+
+/* line 42, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.text {
+  background: black;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+/* line 57, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.text:hover {
+  opacity: 0.8;
+}
+
+/* line 61, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.map-canvas {
+  padding-bottom: 100px;
+}
+
+/* line 65, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#map-info {
+  display: inline-block;
+}
+
+/* line 68, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.Bronx {
+  display: none;
+}
+
+/* line 71, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.Brooklyn {
+  display: none;
+}
+
+/* line 75, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.Upper {
+  display: none;
+}
+
+/* line 79, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.Lower {
+  display: none;
+}
+
+/* line 83, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.Staten {
+  display: none;
+}
+
+/* line 87, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.Queens {
+  display: none;
+}
+
+/* line 91, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.images {
+  background-image: url("/assets/skyshot.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 1300px;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* line 101, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#name {
+  font-style: helvetica;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 230px;
+  background-color: black;
+  border-style: 2px solid red;
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  z-index: 10;
+}
+
+/* line 114, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#name_content {
+  font-size: 100px;
+  width: 500px;
+  height: 150px;
+  margin: 0 auto;
+  color: red;
+  margin-top: 325px;
+}
+
+/* line 123, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#name_content1 {
+  padding-top: 200px;
+  font-size: 1.5em;
+  margin: 0 auto;
+  color: red;
+}
+
+/* line 130, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.box1, .box2, .box3 {
+  background-color: black;
+  list-style: none;
+  display: inline-block;
+  border-radius: 50% 50%;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+/*articles*/
+/* line 142, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+p {
+  padding: 15px;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+/* line 148, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.article-show {
+  padding-left: .5em;
+}
+
+/* line 152, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#show-article {
+  margin: 0 auto;
+}
+
+/* line 156, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.empty {
+  background-image: url("/assets/brooklyn-bridge.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 600px;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* line 166, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.picture {
+  background-image: url("/assets/Freedom.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 600px;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* line 176, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.pictureart {
+  background-image: url("/assets/Skyline.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 600px;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* line 186, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.containerarticles {
+  height: 450px;
+  /*border:5px solid red;*/
+  /*margin-top: 100px;*/
+  /*background-color: blue;*/
+}
+
+/* line 193, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#sign {
+  height: 200px;
+  margin-bottom: 250px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+/* line 200, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.containersign {
+  height: 150px;
+  margin-bottom: 200px;
+  margin-right: 50px;
+  color: red;
+}
+
+/*articles page*/
+/* line 209, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+section {
+  /*float: right;*/
+  /*background-color: grey;*/
+  /*margin: 100px 100px 100px 100px;*/
+  /*border: 2px solid black;*/
+  /*padding-bottom: 100px 100px 100px 100px;*/
+}
+
+/* line 220, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.twitter-timeline {
+  /*float: right;*/
+  /*display: inline-block;*/
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+
+/* line 233, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#moved {
+  margin-top: 20px;
+}
+
+/* line 239, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.blog {
+  float: right;
+}
+
+/* line 243, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.res {
+  float: right;
+}
+
+/* line 257, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+.circle {
+  border-radius: 50% 50%;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  text-align: center;
+  position: absolute;
+  margin-top: 160px;
+  z-index: -5;
+}
+
+/* line 268, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#box1, #box2, #box3 {
+  width: 220px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 10;
+}
+
+/* line 275, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#circle_text1, #circle_text2 {
+  font-size: 8em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 270px;
+  margin-left: .2em;
+}
+
+/* line 283, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#circle_text3 {
+  font-size: 8em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 270px;
+  margin-left: .3em;
+}
+
+/* line 291, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#stats1, #stats2, #stats3 {
+  display: none;
+  font-size: 30px;
+}
+
+/* line 297, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#stats1:hover, #stats2:hover, #stats3:hover {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 175px;
+  font-size: 20px;
+  /*line-height:175px;*/
+}
+
+/* line 305, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#show1 {
+  font-size: 50px;
+}
+
+/* line 308, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#show2 {
+  font-size: 50px;
+}
+
+/* line 311, /Users/ndonias/wdi/rails/HealthFinder/app/assets/stylesheets/home.css.scss.erb */
+#show3 {
+  font-size: 50px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+
+
+ */
+
