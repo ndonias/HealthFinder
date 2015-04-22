@@ -48,14 +48,15 @@
 		</select>
 	</div>
 </div>
+<br>
 
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-7">
 			<div id="map-canvas" style="width: 80%; height: 400px;"></div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md-5">
 			<div id='sidebar_container'>
 				<h3>Clinic Information</h3>
 				<% @clinics.each do |f| %>
@@ -114,17 +115,16 @@ handler.buildMap({
 		      selected_clinics.push(clinics[i])
 		      var boroughClass = clinics[i].borough
 
-		      var taco = "." + boroughClass.split(' ');
-		      var blah =  taco.split(',')
-		      console.log(blah);
-		      $(blah[0]).css('display', 'block')
+		      var level = "." + boroughClass.split(' ');
+		      var change =  level.split(',')
+		      $(change[0]).css('display', 'block')
 		    }
 		    else{
 		      var boroughClass = clinics[i].borough
 
-		      var taco = "." + boroughClass.split(' ');
-		      var blah =  taco.split(',')
-		      $(blah[0]).css('display', 'none')
+		      var level = "." + boroughClass.split(' ');
+		      var change =  level.split(',')
+		      $(change[0]).css('display', 'none')
 
 		    }
 		}
